@@ -1,0 +1,519 @@
+
+.insiderCode {   
+    font-family: monospace;
+    height: 300px;
+    color: white;
+    direction: ltr;
+    overflow: hidden;
+}
+
+
+
+.insiderCode-lines {
+    padding: 4px 0;
+}
+
+.insiderCode pre.insiderCode-line,
+.insiderCode pre.insiderCode-line-like {
+    padding: 0 4px;
+}
+
+.insiderCode-scrollbar-filler,
+.insiderCode-gutter-filler {
+    background-color: white;
+}
+
+
+.insiderCode-gutters {
+    border-right: 1px solid transparent;
+    background-color: #323232;
+    white-space: nowrap;
+}
+
+.insiderCode-linenumber {
+    padding: 0px 6px 0px 0px;
+    min-width: 20px;
+    text-align: right;
+    color: #696969;
+    white-space: nowrap;
+}
+
+.insiderCode-guttermarker {
+    color: white;
+}
+
+.insiderCode-guttermarker-subtle {
+    color: #999;
+}
+
+
+.insiderCode-cursor {
+    border-left: 1px solid white;
+    border-right: none;
+    width: 0;
+}
+
+
+.insiderCode div.insiderCode-secondarycursor {
+    border-left: 1px solid silver;
+}
+
+.cm-fat-cursor .insiderCode-cursor {
+    width: auto;
+    border: 0 !important;
+    background: #7e7;
+}
+
+.cm-fat-cursor div.insiderCode-cursors {
+    z-index: 1;
+}
+
+.cm-fat-cursor-mark {
+    background-color: rgba(20, 255, 20, 0.5);
+    -webkit-animation: blink 1.06s steps(1) infinite;
+    -moz-animation: blink 1.06s steps(1) infinite;
+    animation: blink 1.06s steps(1) infinite;
+}
+
+.cm-animate-fat-cursor {
+    width: auto;
+    -webkit-animation: blink 1.06s steps(1) infinite;
+    -moz-animation: blink 1.06s steps(1) infinite;
+    animation: blink 1.06s steps(1) infinite;
+    background-color: #7e7;
+}
+
+@-moz-keyframes blink {
+    0% {}
+    50% {
+        background-color: transparent;
+    }
+    100% {}
+}
+
+@-webkit-keyframes blink {
+    0% {}
+    50% {
+        background-color: transparent;
+    }
+    100% {}
+}
+
+@keyframes blink {
+    0% {}
+    50% {
+        background-color: transparent;
+    }
+    100% {}
+}
+
+
+.insiderCode-overwrite .insiderCode-cursor {}
+
+.cm-tab {
+    display: inline-block;
+    text-decoration: inherit;
+}
+
+.insiderCode-rulers {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -50px;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.insiderCode-ruler {
+    border-left: 1px solid #ccc;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+
+.cm-s-default .cm-header {
+    color: rgb(152, 152, 255);
+}
+
+.cm-s-default .cm-quote {
+    color: rgb(56, 255, 56);
+}
+
+.cm-negative {
+    color: rgb(255, 56, 56);
+}
+
+.cm-positive {
+    color: rgb(56, 255, 56);
+}
+
+.cm-header,
+.cm-strong {
+    font-weight: bold;
+}
+
+.cm-em {
+    font-style: italic;
+}
+
+.cm-link {
+    text-decoration: underline;
+}
+
+.cm-strikethrough {
+    text-decoration: line-through;
+}
+
+.cm-s-default .cm-keyword {
+    color: rgb(232, 56, 255);
+}
+
+.cm-s-default .cm-atom {
+    color: rgb(94, 70, 255);
+}
+
+.cm-s-default .cm-number {
+    color: rgb(50, 255, 173);
+}
+
+.cm-s-default .cm-def {
+    color: rgb(56, 56, 255);
+}
+
+.cm-s-default .cm-variable,
+.cm-s-default .cm-punctuation,
+.cm-s-default .cm-property,
+.cm-s-default .cm-operator {}
+
+.cm-s-default .cm-variable-2 {
+    color: rgb(57, 156, 255);
+}
+
+.cm-s-default .cm-variable-3,
+.cm-s-default .cm-type {
+    color: rgb(56, 255, 182);
+}
+
+.cm-s-default .cm-comment {
+    color: rgb(255, 144, 32);
+}
+
+.cm-s-default .cm-string {
+    color: rgb(255, 56, 56);
+}
+
+.cm-s-default .cm-string-2 {
+    color: rgb(255, 131, 70);
+}
+
+.cm-s-default .cm-meta {
+    color: rgb(141, 141, 141);
+}
+
+.cm-s-default .cm-qualifier {
+    color: rgb(141, 141, 141);
+}
+
+.cm-s-default .cm-builtin {
+    color: rgb(115, 56, 255);
+}
+
+.cm-s-default .cm-bracket {
+    color: rgb(255, 255, 197);
+}
+
+.cm-s-default .cm-tag {
+    color: rgb(87, 255, 57);
+}
+
+.cm-s-default .cm-attribute {
+    color: rgb(56, 56, 255);
+}
+
+.cm-s-default .cm-hr {
+    color: #999;
+}
+
+.cm-s-default .cm-link {
+    color: rgb(56, 56, 255);
+}
+
+.cm-s-default .cm-error {
+    color: rgb(255, 56, 56);
+}
+
+.cm-invalidchar {
+    color: rgb(255, 58, 58);
+}
+
+.insiderCode-composing {
+    border-bottom: 2px solid;
+}
+
+div.insiderCode span.insiderCode-matchingbracket {
+    color: rgb(41, 255, 41);
+}
+
+div.insiderCode span.insiderCode-nonmatchingbracket {
+    color: rgb(255, 62, 62);
+}
+
+.insiderCode-matchingtag {
+    background: rgba(255, 150, 0, .3);
+}
+
+.insiderCode-activeline-background {
+    background: #e8f2ff;
+}
+
+
+.insiderCode {
+    position: relative;
+    overflow: hidden;
+    background: black;
+}
+
+.insiderCode-scroll {
+    overflow: scroll !important;
+    margin-bottom: -50px;
+    margin-right: -50px;
+    padding-bottom: 50px;
+    height: 100%;
+    outline: none;
+    position: relative;
+}
+
+.insiderCode-sizer {
+    position: relative;
+    border-right: 50px solid transparent;
+}
+
+
+.insiderCode-vscrollbar,
+.insiderCode-hscrollbar,
+.insiderCode-scrollbar-filler,
+.insiderCode-gutter-filler {
+    position: absolute;
+    z-index: 6;
+    display: none;
+    outline: none;
+}
+
+.insiderCode-vscrollbar {
+    right: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.insiderCode-hscrollbar {
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.insiderCode-scrollbar-filler {
+    right: 0;
+    bottom: 0;
+}
+
+.insiderCode-gutter-filler {
+    left: 0;
+    bottom: 0;
+}
+
+.insiderCode-gutters {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    z-index: 3;
+}
+
+.insiderCode-gutter {
+    white-space: normal;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: -50px;
+}
+
+.insiderCode-gutter-wrapper {
+    position: absolute;
+    z-index: 4;
+    background: none !important;
+    border: none !important;
+}
+
+.insiderCode-gutter-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+.insiderCode-gutter-elt {
+    position: absolute;
+    cursor: default;
+    z-index: 4;
+}
+
+.insiderCode-gutter-wrapper ::selection {
+    background-color: transparent
+}
+
+.insiderCode-gutter-wrapper ::-moz-selection {
+    background-color: transparent
+}
+
+.insiderCode-lines {
+    cursor: text;
+    min-height: 1px;
+}
+
+.insiderCode pre.insiderCode-line,
+.insiderCode pre.insiderCode-line-like {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-width: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: 20px;
+    margin: 0;
+    white-space: pre;
+    word-wrap: normal;
+    line-height: inherit;
+    color: inherit;
+    z-index: 2;
+    position: relative;
+    overflow: visible;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-variant-ligatures: contextual;
+    font-variant-ligatures: contextual;
+}
+
+.insiderCode-wrap pre.insiderCode-line,
+.insiderCode-wrap pre.insiderCode-line-like {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: normal;
+}
+
+.insiderCode-linebackground {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.insiderCode-linewidget {
+    position: relative;
+    z-index: 2;
+    padding: 0.1px;
+}
+
+.insiderCode-widget {}
+
+.insiderCode-rtl pre {
+    direction: rtl;
+}
+
+.insiderCode-code {
+    outline: none;
+}
+
+
+.insiderCode-scroll,
+.insiderCode-sizer,
+.insiderCode-gutter,
+.insiderCode-gutters,
+.insiderCode-linenumber {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.insiderCode-measure {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.insiderCode-cursor {
+    position: absolute;
+    pointer-events: none;
+}
+
+.insiderCode-measure pre {
+    position: static;
+}
+
+div.insiderCode-cursors {
+    visibility: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+div.insiderCode-dragcursors {
+    visibility: visible;
+}
+
+.insiderCode-focused div.insiderCode-cursors {
+    visibility: visible;
+}
+
+.insiderCode-selected {
+    background: #d9d9d936;
+}
+
+.insiderCode-focused .insiderCode-selected {
+    background: #d7d4f03d;
+}
+
+.insiderCode-crosshair {
+    cursor: crosshair;
+}
+
+.insiderCode-line::selection,
+.insiderCode-line>span::selection,
+.insiderCode-line>span>span::selection {
+    background: #d7d4f018;
+}
+
+.insiderCode-line::-moz-selection,
+.insiderCode-line>span::-moz-selection,
+.insiderCode-line>span>span::-moz-selection {
+    background: #d7d4f04d;
+}
+
+.cm-searching {
+    background-color: rgba(255, 255, 170, 0.329);
+    background-color: rgba(255, 255, 0, 0.041);
+}
+
+
+.cm-force-border {
+    padding-right: .1px;
+}
+
+@media print {
+    .insiderCode div.insiderCode-cursors {
+        visibility: hidden;
+    }
+}
+
+
+.cm-tab-wrap-hack:after {
+    content: '';
+}
+
+
+span.insiderCode-selectedtext {
+    background: none;
+}
